@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="conveyorware" translate="label" sortOrder="100"> 
+            <!-- add a new tab with id conveyorware -->
+            <label>Conveyorware</label>
+        </tab>
+        <section id="conveyorware" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <!-- add a new section with id conveyorware and for tab conveyorware -->
+            <class>separator-top</class>
+            <label>Conveyorware Configuration</label>
+            <tab>conveyorware</tab>
+            <resource>Magecomp_First::test_config</resource>
+            <group id="active_display" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <!-- add a new group with id active display -->
+                <field id="cw_username" translate="label" type="text" sortOrder="8" showInDefault="1"   showInWebsite="1" showInStore="1">
+                    <label>CW Username</label>
+                </field>
+             <field id="user_name" translate="label" type="text" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Magento Admin Username</label>
+                </field>
+                <field id="password" translate="label" type="password" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Magento Admin Password</label>
+                </field> 
+                               
+			  <!-- <field id="password" translate="label" type="text" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Admin Password</label>
+                </field> -->
+				
+			<!-- <field id="inventory_url" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Inventory url</label>
+                </field> -->
+
+	<!-- <field id="order_url" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Order url</label>
+				</field> -->
+                	
+                
+                <field id="company_number" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CW Company Number</label>
+                </field>	
+                <field id="warehouse_number" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CW Warehouse Number</label>
+                </field>
+                <field id="customer_number" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CW Customer Number</label>
+                </field>
+                <field id="sales_person_number" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>CW Sales Person Number</label>
+                </field>
+             </group>
+        </section>
+    </system>
+</config>
